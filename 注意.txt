@@ -1,0 +1,11 @@
+matplotlib画图的需要中文必加
+#设置黑体为默认字体
+plt.rcParams["font.sans-serif"] = "SimHei"
+#设置正常显示负号
+plt.rcParams["axes.unicode_minus"] = False
+
+在tf2运行tf1代码
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+#使用tensorboardx
+tensorboard --logdir=logs --port 6006
